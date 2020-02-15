@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container bg-light shadow" style="margin-top:15vh">
+    <div class="row">
+      <div class="col-md-7">
+        <form name="cal1">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Description</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Number of lines</th>
+                <th scope="col">Total</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <select name="ds1" id="ds1" class="form-control form-control-sm">
+                    <option value="0">None</option>
+                    <option value="262.28">Analog Junction Line</option>
+                    <option value="433.87">ISDN BRA</option>
+                    <option value="3146.62">PRI</option>
+                    <option value="372.87">DSL Faster</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="qt1" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="nol1" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="total1" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <select name="ds2" id="ds2" class="form-control form-control-sm">
+                    <option value="0">None</option>
+                    <option value="262.28">Analog Junction Line</option>
+                    <option value="433.87">ISDN BRA</option>
+                    <option value="3146.62">PRI</option>
+                    <option value="372.87">DSL Faster</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="qt2" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="nol2" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="total2" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <select name="ds3" id="ds3" class="form-control form-control-sm">
+                    <option value="0">None</option>
+                    <option value="262.28">Analog Junction Line</option>
+                    <option value="433.87">ISDN BRA</option>
+                    <option value="3146.62">PRI</option>
+                    <option value="372.87">DSL Faster</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="qt3" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="nol3" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="total3" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <select name="ds4" id="ds4" class="form-control form-control-sm">
+                    <option value="0">None</option>
+                    <option value="262.28">Analog Junction Line</option>
+                    <option value="433.87">ISDN BRA</option>
+                    <option value="3146.62">PRI</option>
+                    <option value="372.87">DSL Faster</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="qt4" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="nol4" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="total4" class="form-control form-control-sm" value="0" />
+                  </div>
+                </td>
+              </tr>
+              <tr class="">
+                <td></td>
+                <td></td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="nolfinal" class="form-control form-control-sm" value="0" readonly />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-group">
+                    <input type="number" id="totalFinal" class="form-control form-control-sm" value="0" readonly />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div class="col-md-4 border text-center">
+        <div class="container">
+          <h3>Our Pricing</h3>
+          <div class="row">
+
+            <div class="col">Line Rental per 10 lines</div>
+            <div class="col">R 250</div>
+          </div>
+        </div>
+        <div class="container">
+          <h3>How much will I Save?</h3>
+          <table class="table">
+            <tr>
+              <th>Description</th>
+              <th>Qty</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>C Networks Line</td>
+              <td><span id="sqty">0</span></td>
+              <td>R <span id="sttl">0</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <table class="table">
+            <tr>
+              <th>Saving Per Month</th>
+              <th>Saving Per Year</th>
+            </tr>
+            <tr>
+              <td>R <span id="spm">0</span></td>
+              <td>R <span id="spy"></span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("select").change(run);
+      $("input").keyup(run);
+      // Row 1 Values
+
+      function nol(index, qty) {
+        var nol;
+        switch (index) {
+          case 0:
+            nol = 0 * qty;
+            break;
+          case 1:
+            nol = 1 * qty;
+            break;
+          case 2:
+            nol = 2 * qty;
+            break;
+          case 3:
+            nol = 30 * qty;
+            break;
+          case 4:
+            nol = 30 * qty;
+            break;
+        }
+        return nol;
+      }
+
+      function DoRowOne() {
+        var ds1 = $("#ds1");
+        var ds1Value = $("#ds1").val();
+        var index = ds1.prop("selectedIndex");
+        var qt1 = $("#qt1").val();
+        var nol1 = nol(index, qt1);
+        console.log(nol1);
+        $("#nol1").val(nol1);
+        $("#total1").val(ds1Value * qt1);
+      }
+
+      function DoRowTwo() {
+        var ds2 = $("#ds2");
+        var ds2Value = $("#ds2").val();
+        var index = ds2.prop("selectedIndex");
+        var qt2 = $("#qt2").val();
+        var nol2 = nol(index, qt2);
+        console.log(index);
+        $("#nol2").val(nol2);
+        $("#total2").val(ds2Value * qt2);
+      }
+
+      function DoRowThree() {
+        var ds3 = $("#ds3");
+        var ds3Value = $("#ds3").val();
+        var index = ds3.prop("selectedIndex");
+        var qt3 = $("#qt3").val();
+        var nol3 = nol(index, qt3);
+        console.log(index);
+        $("#nol3").val(nol3);
+        $("#total3").val(ds3Value * qt3);
+      }
+
+      function DoRowFour() {
+        var ds4 = $("#ds4");
+        var ds4Value = $("#ds4").val();
+        var index = ds4.prop("selectedIndex");
+        var qt4 = $("#qt4").val();
+        var nol4 = nol(index, qt4);
+        console.log(index);
+        $("#nol4").val(nol4);
+        $("#total4").val(ds4Value * qt4);
+      }
+
+      function total() {
+        function tt(tnum) {
+          return parseFloat($("#total" + tnum).val());;
+        }
+        var total = tt(1) + tt(2) + tt(3) + tt(4);
+        $("#totalFinal").val(total);
+
+        function nol(tnum) {
+          return parseFloat($("#nol" + tnum).val());
+        }
+        var nol = nol(1) + nol(2) + nol(3) + nol(4);
+        $("#nolfinal").val(nol);
+        // Savings
+        var sqty = nol/10;
+        $("#sqty").text(sqty);
+        var sttl = sqty*250;
+        $("#sttl").text(sttl);
+
+        var spm = total-sttl;
+        $("#spm").text(spm);
+
+        var spy = spm*12;
+        $("#spy").text(spy);
+
+      }
+
+
+
+      function run() {
+        DoRowOne();
+        DoRowTwo();
+        DoRowThree();
+        DoRowFour();
+        total();
+      }
+
+      // Row 2
+
+
+    });
+  </script>
+</body>
+
+</html>
